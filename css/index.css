@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif,微軟正黑體;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    /* 按鈕不加底線 */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bg-setting {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+#nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255, 0.3);
+
+    padding: 15px;
+    /* 上下推15 */
+    position: fixed;
+    /* 固定在頁面上方 */
+}
+
+#nav .container {
+    widows: 1140px;
+    height: 50px;
+    /* background-color: rgb(185, 67, 67); */
+
+    padding: 0 30px 0 30px;
+
+    display: flex;
+    justify-content: space-between
+        /* 下面一層的ul浮動 & 內容物中間距離相等 */
+}
+
+#nav .container>ul {
+    display: flex;
+    justify-content: space-between;
+    /* 下面一層的a浮動 & 內容物中間距離相等 */
+
+    width: 600px;
+    height: 50px;
+}
+
+#nav .container .logo {
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue;
+
+    text-align: center;
+    line-height: 50px;
+}
+
+#nav .container ul li a {
+    display: block;
+
+    width: 120px;
+    height: 50px;
+    /* background-color: cornflowerblue; */
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+}
+
+
+.dropdown:hover>ul {
+    display: block;
+    border-left: 0px;
+}
+
+.dropdown>ul {
+    display: none;
+}
+
+
+
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+
+    background-image: url('../img/pic4.jpg');
+}
+
+#banner .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(153, 153, 153, 0.1);
+}
+
+
+
+#content {
+    width: 100%;
+    height: 2000px;
+    background-color: #FEDFE1;
+}
+
+#content .section-1 {
+    padding: 100px;
+    /* background-color: rgb(148, 148, 148); */
+}
+
+#content .section-1 .container {
+    width: 1140px;
+    margin: auto;
+    /* background-color: yellowgreen; */
+}
+
+#content .section-1 .container h2 {
+    color: rgb(54, 54, 54);
+    font-size: 32px;
+
+    margin: 0 0 50px 0;
+
+
+}
+
+#content .section-1 .container .top {
+    width: 100%;
+    height: 250px;
+    /* background-color: teal; */
+    margin: 0 0 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-content:center
+}
+
+#content .section-1 .container .top .pic {
+    width: 400px;
+    height: 100%;
+    background-color: turquoise;
+
+    background-image: url('../img/pic1.jpeg');
+    background-size: cover;
+}
+
+#content .section-1 .container .top .text {
+    width: 700px;
+    height: 100%;
+    /* background-color: salmon; */
+
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: justify;
+
+    padding: 50px;
+}
+
+#content .section-1 .container .down {
+    width: 100%;
+    height: 250px;
+    /* background-color: teal; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse
+}
+
+#content .section-1 .container .down .pic {
+    width: 400px;
+    height: 100%;
+    background-color: turquoise;
+
+    background-image: url('../img/pic6.png');
+}
+
+#content .section-1 .container .down .text {
+    width: 700px;
+    height: 100%;
+    /* background-color: rgb(165, 76, 66); */
+
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: justify;
+
+    padding: 50px;
+}
+
+
+#content .section-2{
+    width: 100%;
+    height: 300px;
+    background-color: slategrey;
+
+    background-image: url('../img/pic10.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#content .section-2 .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.3);
+
+    display: flex;
+    justify-content:center;
+    align-items:center
+}
+
+#content .section-2 .mask .box{
+    width: 400px;
+    height: 80px;
+    background-color: rgba(44, 44, 44, 0.692);
+
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 80px;
+}
+
+#content .section-2 .container{
+    width: 1140px;
+    /* background-color: aquamarine; */
+    margin: auto;
+    padding: 100px 0;
+}
+
+#content .section-2 .container .card-group{
+    width:100%;
+    height: 100%;
+    /* background-color: black; */
+    margin: auto;
+
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:space-between
+}
+
+#content .section-2 .container .card-group .card{
+    width: 550px;
+    height: 200px;
+    /* background-color: blanchedalmond; */
+
+    margin: 0 0 40px 0;
+}
+
+#content .section-2 .container .card-group .card .card-pic{
+    width: 200px;
+    height: 200px;
+    /* background-color: brown; */
+    border: 3px solid white;
+    margin: 0 25px 0 0;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+}
+
+#content .section-2 .container .card-group .card{
+    display: flex;
+}
+
+#content .section-2 .container .card-group .card-text{
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+
+    text-align: justify;
+}
+
+#content .section-2 .container .card-group .card-text p{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+#content .section-2 .container .card-group .A .card-pic {
+    background-image: url('../img/food1.jpg');
+}
+
+#content .section-2 .container .card-group .B .card-pic {
+    background-image: url('../img/food2.jpg');
+}
+
+#content .section-2 .container .card-group .C .card-pic {
+    background-image: url('../img/food3.jpg');
+}
+
+#content .section-2 .container .card-group .D .card-pic {
+    background-image: url('../img/food5.jpg');
+    background-position: -30px;
+}
+
+
+#content .section-3{
+    width: 100%;
+    height: 300px;
+    background-color: slategrey;
+
+    background-image: url('../img/spot1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: #B5495B;
+}
